@@ -1,6 +1,6 @@
 # Minikube MCP Server 🚀
 
-A Model Context Protocol (MCP) server that enables AI assistants to interact with Minikube Kubernetes clusters. This project serves as a bridge between AI tools (like Claude, GitHub Copilot, and other MCP-compatible assistants) and Minikube, translating natural language requests into Minikube operations.
+A Model Context Protocol (MCP) server that enables AI assistants to interact with Minikube Kubernetes clusters. This project serves as a bridge between AI tools (like Claude, GitHub Copilot, and other MCP-compatible assistants) and Minikube, translating natural language requests into Minikube operations similar to aks agentic cli.
 
 ## 🎯 Learning Project
 
