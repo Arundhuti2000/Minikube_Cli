@@ -23,7 +23,7 @@ The Minikube-MCP server allows AI assistants to:
 - Debug and diagnose cluster issues
 - Manage Minikube addons and configurations
 
-**Example interactions with AI:**
+**Example interactions with AI**
 
 ```
 "Start my minikube cluster"
@@ -87,7 +87,6 @@ minikube version    # Should show minikube version
 kubectl version     # Should show kubectl version
 ```
 
-## 🚀 Quick Start
 
 ### 1. Clone and Setup
 
