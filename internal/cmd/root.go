@@ -2,7 +2,9 @@ package cmd
 
 import (
 	"fmt"
+	"os"
 
+	"github.com/Arundhuti2000/Minikube_Cli/internal/server"
 	"github.com/spf13/cobra"
 )
 
@@ -16,11 +18,13 @@ var rootCmd =&cobra.Command{
 	Short: "Minikube MCP Server",
 	Long: "A Model Context Protocol server for Minikube Kubernetes clusters.",
 	Run: func(cmd *cobra.Command, args []string){
-		fmt.Println("Minikube MCP Server starting...")
-		fmt.Printf("Transport: %s\n", transport)
-		fmt.Printf("Log Level: %s\n", logLevel)
-		fmt.Printf("Access Level: %s\n", accessLevel)
-		
+		s := server.NewMinikubeServer("minikube-mcp", "0.1.0")
+		s.RegisterTools()
+
+		if err := s.Start(); err != nil {
+			fmt.Fprintf(os.Stderr, "Server error: %v\n", err)
+			os.Exit(1)
+		}
 	},
 }
 
